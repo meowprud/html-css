@@ -38,10 +38,11 @@ main p {
 
 header{
     text-align: center;
-    margin: auto;
+    margin: 0;
     background-image: linear-gradient(to top, var(--cor1),var(--cor0));
     padding: 14px;
     height: 100px;
+    width: 100%;
     
 }
 
@@ -141,6 +142,7 @@ p {
 }
 
 footer {
+    width: 100%;
     display: flex;
     background-color: var(--cor0);
     color: #fff;
@@ -220,7 +222,12 @@ main a:hover{
     transition: 0.3s;
 }
 
+footer{
+
+}
+
 footer p {
+    
     margin: 0;
     padding: 2px;
     font-weight: bold;
