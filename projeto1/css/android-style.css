@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+@font-face {
+    font-family: 'Android';
+    src: url("../fontes/idroid.otf") format('opentype');
+    font-weight: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor0:#9b0eab;
+    --cor1:#f06eff;
+    --cor2:#eb8ef5;
+    --cor3:#72a840;
+    --cor4:#bff58e;
+
+    --fonte-padrao: 'Montserrat', sans-serif;
+    --fonte-destaque:'Bebas Neue', cursive;
+    --fonte-android: 'Android' , cursive;
+    }
+
+body{
+    background-color: #fde4a0ce;
+    font-family: var(--fonte-padrao);
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+}
+
+header{
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(to top, var(--cor1),var(--cor0));
+    padding: 14px;
+    height: 100px;
+    
+}
+
+header p {
+    color: #fff;
+    width: 350px;
+    text-align:center;
+    margin: auto;
+    font-family: var(--fonte-padrao);
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
+}
+
+nav{
+    background-color: var(--cor1);
+    padding: 15px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.226);
+    font-weight: bold;
+}
+
+nav > a:hover{
+    background-color: var(--cor2);
+    color: rgba(0, 0, 0, 0.637);
+    transition: 0.35s ease;
+    border-radius: 5px;
+}
+nav > a {
+    color: var(--cor4);
+    text-decoration: none;
+    padding: 15px;
+
+}
+main{
+    background-color: #ffe8e8;
+    max-width: 1000px;
+    min-width: 400px;
+    margin: auto;
+    padding:35px;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.13);
+}
+
+header > h1 {
+    color: #fff;
+    font-family: var(--fonte-destaque);
+    font-weight: 500;
+    font-size: 50px;
+    padding-top: 10px;
+    max-width: 500px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.384);
+    font-weight: normal
+}
+
+main .video{
+    background-color: #51792c;
+    margin: 0px -35px 30px -35px;
+    padding: 10px;
+    padding-bottom: 58%;
+    position: relative;
+}
+
+div.video > iframe {
+   position: absolute;
+   top: 3%;
+   left: 3%;
+   width: 94%;
+   height: 94%;
+}
+
+#titulo{
+    color: var(--cor0);
+    font-family: var(--fonte-android);
+    font-size: 1.8rem;
+}
+
+main h2{
+    color: var(--cor1);
+    font-family: var(--fonte-destaque);
+    font-size: 1.6rem;
+    background-image: linear-gradient(to right, var(--cor4), transparent);
+    text-indent: 10px;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 2em;
+    font-size: 1.1em;
+    font-weight: 450;
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor0);
+    color: #fff;
+    margin-bottom: zero;
+    justify-content: center;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: left;
+    font-family: var(--fonte-padrao);
+    padding: 4px;
+}
+
+main img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+main #pequeno{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    padding: 2px 2px;
+}
+
+a.externo::after{
+    content: '\00a0\1F517';
+}
+ aside ul {
+    text-align: justify , center;
+    list-style-position: inside;
+    list-style-type: '\2714\00a0\00a0';
+    columns: 2;
+    
+}
+
+aside{
+    margin-top: 10px;
+    background-color: var(--cor4);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.315);
+}
+
+aside abbr {
+    text-decoration: none;
+    font-weight: 600;
+}
+aside > h3 {
+    background-color: var(--cor1);
+    color: white;
+    padding: 7px;
+    margin: -10px -10px 0 -10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-weight: bold;
+    
+}
+
+main a {
+    background-color:var(--cor4);
+    text-decoration:solid;
+    font-weight: bold;
+    color: #51792c;
+}
+
+main a:hover{
+    text-decoration:underline;
+    transition: 0.3s;
+}
+
+footer p {
+    margin: 0;
+    padding: 2px;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+#mel p {
+    font-family: cursive;
+    margin-top:0;
+}
+
